@@ -19,6 +19,7 @@ class EmailParser
     parsed_emails.split(',').uniq
   end 
   
+  
   # solution:
   
   # def parse
