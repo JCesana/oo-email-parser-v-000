@@ -19,4 +19,11 @@ class EmailParser
   #   parsed_emails.split(',').uniq
   # end 
   
+  def parse
+    emails.split.map do |email|
+      email.split(',')
+    end.flatten.uniq
+  end
+  
+  
 end 
