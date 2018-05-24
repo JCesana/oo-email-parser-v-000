@@ -13,10 +13,10 @@ class EmailParser
   end 
   
   
-  def parse 
-    parsed_emails = @emails.gsub(", ",",")
-    parsed_emails = parsed_emails.gsub(" ", ",")
-    parsed_emails.split(',').uniq
-  end 
+  # def parse 
+  #   parsed_emails = @emails.gsub(", ",",")
+  #   parsed_emails = parsed_emails.gsub(" ", ",")
+  #   parsed_emails.split(',').uniq
+  # end 
   
 end 
