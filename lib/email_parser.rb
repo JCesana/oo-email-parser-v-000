@@ -13,17 +13,19 @@ class EmailParser
   end 
   
   
-  # def parse 
-  #   parsed_emails = @emails.gsub(", ",",")
-  #   parsed_emails = parsed_emails.gsub(" ", ",")
-  #   parsed_emails.split(',').uniq
-  # end 
+  def parse 
+    parsed_emails = @emails.gsub(", ",",")
+    parsed_emails = parsed_emails.gsub(" ", ",")
+    parsed_emails.split(',').uniq
+  end 
   
-  def parse
-    emails.split.map do |email|
-      email.split(',')
-    end.flatten.uniq
-  end
+  # solution:
+  
+  # def parse
+  #   emails.split.map do |email|
+  #     email.split(',')
+  #   end.flatten.uniq
+  # end
   
   
 end 
